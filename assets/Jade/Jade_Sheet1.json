@@ -1,0 +1,349 @@
+{ "frames": {
+   "Jade_Sheet1 #Dash 0.aseprite": {
+    "frame": { "x": 0, "y": 0, "w": 69, "h": 63 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 69, "h": 63 },
+    "sourceSize": { "w": 69, "h": 63 },
+    "duration": 120
+   },
+   "Jade_Sheet1 #Dash 1.aseprite": {
+    "frame": { "x": 69, "y": 0, "w": 69, "h": 63 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 69, "h": 63 },
+    "sourceSize": { "w": 69, "h": 63 },
+    "duration": 120
+   },
+   "Jade_Sheet1 #Dash 2.aseprite": {
+    "frame": { "x": 138, "y": 0, "w": 69, "h": 63 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 69, "h": 63 },
+    "sourceSize": { "w": 69, "h": 63 },
+    "duration": 120
+   },
+   "Jade_Sheet1 #Dash 3.aseprite": {
+    "frame": { "x": 207, "y": 0, "w": 69, "h": 63 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 69, "h": 63 },
+    "sourceSize": { "w": 69, "h": 63 },
+    "duration": 120
+   },
+   "Jade_Sheet1 #Dash 4.aseprite": {
+    "frame": { "x": 276, "y": 0, "w": 69, "h": 63 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 69, "h": 63 },
+    "sourceSize": { "w": 69, "h": 63 },
+    "duration": 120
+   },
+   "Jade_Sheet1 #Dash 5.aseprite": {
+    "frame": { "x": 345, "y": 0, "w": 69, "h": 63 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 69, "h": 63 },
+    "sourceSize": { "w": 69, "h": 63 },
+    "duration": 120
+   },
+   "Jade_Sheet1 #Dash 6.aseprite": {
+    "frame": { "x": 414, "y": 0, "w": 69, "h": 63 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 69, "h": 63 },
+    "sourceSize": { "w": 69, "h": 63 },
+    "duration": 120
+   },
+   "Jade_Sheet1 #Dash 7.aseprite": {
+    "frame": { "x": 483, "y": 0, "w": 69, "h": 63 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 69, "h": 63 },
+    "sourceSize": { "w": 69, "h": 63 },
+    "duration": 120
+   },
+   "Jade_Sheet1 #Idle 0.aseprite": {
+    "frame": { "x": 0, "y": 63, "w": 69, "h": 63 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 69, "h": 63 },
+    "sourceSize": { "w": 69, "h": 63 },
+    "duration": 120
+   },
+   "Jade_Sheet1 #Idle 1.aseprite": {
+    "frame": { "x": 69, "y": 63, "w": 69, "h": 63 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 69, "h": 63 },
+    "sourceSize": { "w": 69, "h": 63 },
+    "duration": 120
+   },
+   "Jade_Sheet1 #Idle 2.aseprite": {
+    "frame": { "x": 138, "y": 63, "w": 69, "h": 63 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 69, "h": 63 },
+    "sourceSize": { "w": 69, "h": 63 },
+    "duration": 120
+   },
+   "Jade_Sheet1 #Idle 3.aseprite": {
+    "frame": { "x": 207, "y": 63, "w": 69, "h": 63 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 69, "h": 63 },
+    "sourceSize": { "w": 69, "h": 63 },
+    "duration": 120
+   },
+   "Jade_Sheet1 #Idle 4.aseprite": {
+    "frame": { "x": 276, "y": 63, "w": 69, "h": 63 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 69, "h": 63 },
+    "sourceSize": { "w": 69, "h": 63 },
+    "duration": 120
+   },
+   "Jade_Sheet1 #Idle 5.aseprite": {
+    "frame": { "x": 345, "y": 63, "w": 69, "h": 63 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 69, "h": 63 },
+    "sourceSize": { "w": 69, "h": 63 },
+    "duration": 120
+   },
+   "Jade_Sheet1 #Idle 6.aseprite": {
+    "frame": { "x": 414, "y": 63, "w": 69, "h": 63 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 69, "h": 63 },
+    "sourceSize": { "w": 69, "h": 63 },
+    "duration": 120
+   },
+   "Jade_Sheet1 #Idle 7.aseprite": {
+    "frame": { "x": 483, "y": 63, "w": 69, "h": 63 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 69, "h": 63 },
+    "sourceSize": { "w": 69, "h": 63 },
+    "duration": 120
+   },
+   "Jade_Sheet1 #Idle 8.aseprite": {
+    "frame": { "x": 552, "y": 63, "w": 69, "h": 63 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 69, "h": 63 },
+    "sourceSize": { "w": 69, "h": 63 },
+    "duration": 120
+   },
+   "Jade_Sheet1 #Idle 9.aseprite": {
+    "frame": { "x": 621, "y": 63, "w": 69, "h": 63 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 69, "h": 63 },
+    "sourceSize": { "w": 69, "h": 63 },
+    "duration": 120
+   },
+   "Jade_Sheet1 #Walk 0.aseprite": {
+    "frame": { "x": 0, "y": 126, "w": 69, "h": 63 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 69, "h": 63 },
+    "sourceSize": { "w": 69, "h": 63 },
+    "duration": 120
+   },
+   "Jade_Sheet1 #Walk 1.aseprite": {
+    "frame": { "x": 69, "y": 126, "w": 69, "h": 63 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 69, "h": 63 },
+    "sourceSize": { "w": 69, "h": 63 },
+    "duration": 120
+   },
+   "Jade_Sheet1 #Walk 2.aseprite": {
+    "frame": { "x": 138, "y": 126, "w": 69, "h": 63 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 69, "h": 63 },
+    "sourceSize": { "w": 69, "h": 63 },
+    "duration": 120
+   },
+   "Jade_Sheet1 #Walk 3.aseprite": {
+    "frame": { "x": 207, "y": 126, "w": 69, "h": 63 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 69, "h": 63 },
+    "sourceSize": { "w": 69, "h": 63 },
+    "duration": 120
+   },
+   "Jade_Sheet1 #Walk 4.aseprite": {
+    "frame": { "x": 276, "y": 126, "w": 69, "h": 63 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 69, "h": 63 },
+    "sourceSize": { "w": 69, "h": 63 },
+    "duration": 120
+   },
+   "Jade_Sheet1 #Walk 5.aseprite": {
+    "frame": { "x": 345, "y": 126, "w": 69, "h": 63 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 69, "h": 63 },
+    "sourceSize": { "w": 69, "h": 63 },
+    "duration": 120
+   },
+   "Jade_Sheet1 #Walk 6.aseprite": {
+    "frame": { "x": 414, "y": 126, "w": 69, "h": 63 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 69, "h": 63 },
+    "sourceSize": { "w": 69, "h": 63 },
+    "duration": 120
+   },
+   "Jade_Sheet1 #Walk 7.aseprite": {
+    "frame": { "x": 483, "y": 126, "w": 69, "h": 63 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 69, "h": 63 },
+    "sourceSize": { "w": 69, "h": 63 },
+    "duration": 120
+   },
+   "Jade_Sheet1 #Walk 8.aseprite": {
+    "frame": { "x": 552, "y": 126, "w": 69, "h": 63 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 69, "h": 63 },
+    "sourceSize": { "w": 69, "h": 63 },
+    "duration": 120
+   },
+   "Jade_Sheet1 #Walk 9.aseprite": {
+    "frame": { "x": 621, "y": 126, "w": 69, "h": 63 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 69, "h": 63 },
+    "sourceSize": { "w": 69, "h": 63 },
+    "duration": 120
+   },
+   "Jade_Sheet1 #Run 0.aseprite": {
+    "frame": { "x": 0, "y": 189, "w": 69, "h": 63 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 69, "h": 63 },
+    "sourceSize": { "w": 69, "h": 63 },
+    "duration": 120
+   },
+   "Jade_Sheet1 #Run 1.aseprite": {
+    "frame": { "x": 69, "y": 189, "w": 69, "h": 63 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 69, "h": 63 },
+    "sourceSize": { "w": 69, "h": 63 },
+    "duration": 120
+   },
+   "Jade_Sheet1 #Run 2.aseprite": {
+    "frame": { "x": 138, "y": 189, "w": 69, "h": 63 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 69, "h": 63 },
+    "sourceSize": { "w": 69, "h": 63 },
+    "duration": 120
+   },
+   "Jade_Sheet1 #Run 3.aseprite": {
+    "frame": { "x": 207, "y": 189, "w": 69, "h": 63 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 69, "h": 63 },
+    "sourceSize": { "w": 69, "h": 63 },
+    "duration": 120
+   },
+   "Jade_Sheet1 #Run 4.aseprite": {
+    "frame": { "x": 276, "y": 189, "w": 69, "h": 63 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 69, "h": 63 },
+    "sourceSize": { "w": 69, "h": 63 },
+    "duration": 120
+   },
+   "Jade_Sheet1 #Run 5.aseprite": {
+    "frame": { "x": 345, "y": 189, "w": 69, "h": 63 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 69, "h": 63 },
+    "sourceSize": { "w": 69, "h": 63 },
+    "duration": 120
+   },
+   "Jade_Sheet1 #Run 6.aseprite": {
+    "frame": { "x": 414, "y": 189, "w": 69, "h": 63 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 69, "h": 63 },
+    "sourceSize": { "w": 69, "h": 63 },
+    "duration": 120
+   },
+   "Jade_Sheet1 #Run 7.aseprite": {
+    "frame": { "x": 483, "y": 189, "w": 69, "h": 63 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 69, "h": 63 },
+    "sourceSize": { "w": 69, "h": 63 },
+    "duration": 120
+   },
+   "Jade_Sheet1 #Run 8.aseprite": {
+    "frame": { "x": 552, "y": 189, "w": 69, "h": 63 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 69, "h": 63 },
+    "sourceSize": { "w": 69, "h": 63 },
+    "duration": 120
+   },
+   "Jade_Sheet1 #Jump 0.aseprite": {
+    "frame": { "x": 0, "y": 252, "w": 69, "h": 63 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 69, "h": 63 },
+    "sourceSize": { "w": 69, "h": 63 },
+    "duration": 120
+   },
+   "Jade_Sheet1 #Jump 1.aseprite": {
+    "frame": { "x": 69, "y": 252, "w": 69, "h": 63 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 69, "h": 63 },
+    "sourceSize": { "w": 69, "h": 63 },
+    "duration": 120
+   },
+   "Jade_Sheet1 #Fall.aseprite": {
+    "frame": { "x": 0, "y": 315, "w": 69, "h": 63 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 69, "h": 63 },
+    "sourceSize": { "w": 69, "h": 63 },
+    "duration": 120
+   }
+ },
+ "meta": {
+  "app": "https://www.aseprite.org/",
+  "version": "1.3.7-x64",
+  "format": "RGBA8888",
+  "size": { "w": 690, "h": 378 },
+  "scale": "1",
+  "frameTags": [
+   { "name": "Everything", "from": 0, "to": 39, "direction": "forward", "color": "#000000ff" },
+   { "name": "Dash", "from": 0, "to": 7, "direction": "forward", "color": "#000000ff" },
+   { "name": "Idle", "from": 8, "to": 17, "direction": "forward", "color": "#000000ff" },
+   { "name": "Walk", "from": 18, "to": 27, "direction": "forward", "color": "#000000ff" },
+   { "name": "Run", "from": 28, "to": 36, "direction": "forward", "color": "#000000ff" },
+   { "name": "Jump", "from": 37, "to": 38, "direction": "forward", "color": "#000000ff" },
+   { "name": "Fall", "from": 39, "to": 39, "direction": "forward", "color": "#000000ff" }
+  ],
+  "layers": [
+   { "name": "Idle", "opacity": 255, "blendMode": "normal" },
+   { "name": "Dash", "opacity": 255, "blendMode": "normal" },
+   { "name": "Fall", "opacity": 255, "blendMode": "normal" },
+   { "name": "Jump", "opacity": 255, "blendMode": "normal" },
+   { "name": "Run", "opacity": 255, "blendMode": "normal" },
+   { "name": "Walk", "opacity": 255, "blendMode": "normal" }
+  ],
+  "slices": [
+  ]
+ }
+}

@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://cquod4ai3as6h"]
+
+[ext_resource type="Texture2D" uid="uid://8mx254b0qv0b" path="res://assets/Asset Pack-V1/Super Basic Tilemap/character.png" id="1_wpbud"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tpkgx"]
+size = Vector2(79, 105)
+
+[node name="DinoEnemy" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-8, 11)
+shape = SubResource("RectangleShape2D_tpkgx")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_wpbud")
+
+[node name="State Machine" type="Node" parent="."]
+
+[node name="Idle" type="Node" parent="State Machine"]
+
+[node name="Follow" type="Node" parent="State Machine"]
