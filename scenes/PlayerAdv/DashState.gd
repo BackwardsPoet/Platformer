@@ -1,5 +1,6 @@
-extends Node
+extends State
 
+class_name DashState
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

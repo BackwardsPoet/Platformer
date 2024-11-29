@@ -1,21 +1,23 @@
-[gd_scene load_steps=34 format=3 uid="uid://cvlorsn3iebxm"]
+[gd_scene load_steps=36 format=3 uid="uid://cvlorsn3iebxm"]
 
-[ext_resource type="Script" path="res://scenes/PlayerAdv/Player.gd" id="1_yj5fb"]
+[ext_resource type="Script" path="res://scenes/PlayerAdv/PlayerAdv.gd" id="1_gyt25"]
 [ext_resource type="Texture2D" uid="uid://cmnxslv25t6it" path="res://assets/Jade/Jade_Sheet1-Dash.png" id="2_72u1t"]
 [ext_resource type="Texture2D" uid="uid://b3325vfsub74y" path="res://assets/Jade/Jade_Sheet1-Fall.png" id="3_e2klw"]
 [ext_resource type="Texture2D" uid="uid://c5yugp4pvpppk" path="res://assets/Jade/Jade_Sheet1-Idle.png" id="4_pni8f"]
 [ext_resource type="Texture2D" uid="uid://ducych3vh7tse" path="res://assets/Jade/Jade_Sheet1-Jump.png" id="5_a1f55"]
 [ext_resource type="Texture2D" uid="uid://bcgw3tamwsu87" path="res://assets/Jade/Jade_Sheet1-Run.png" id="6_ogtsi"]
+[ext_resource type="Script" path="res://scenes/PlayerAdv/CharacterStateMachine.gd" id="7_h3d4f"]
 [ext_resource type="Texture2D" uid="uid://b8w5mjc0rf612" path="res://assets/Jade/Jade_Sheet1-Walk.png" id="7_y4k8e"]
-[ext_resource type="Script" path="res://scenes/PlayerAdv/STATES.gd" id="8_gaaon"]
-[ext_resource type="PackedScene" uid="uid://dnhiqi3xoh0r4" path="res://scenes/PlayerAdv/IDLE.tscn" id="9_oeyuo"]
-[ext_resource type="Script" path="res://scenes/PlayerAdv/Move.gd" id="10_70asg"]
-[ext_resource type="PackedScene" uid="uid://dymqodv8p862n" path="res://scenes/PlayerAdv/DASH.tscn" id="10_lehei"]
-[ext_resource type="Script" path="res://scenes/PlayerAdv/Jump.gd" id="11_jtdqq"]
-[ext_resource type="Script" path="res://scenes/PlayerAdv/Fall.gd" id="12_mfryf"]
+[ext_resource type="Script" path="res://scenes/PlayerAdv/GroundState.gd" id="8_b52sq"]
+[ext_resource type="Script" path="res://scenes/PlayerAdv/JumpState.gd" id="9_cngtu"]
+[ext_resource type="Script" path="res://scenes/PlayerAdv/LandingState.gd" id="10_qjwij"]
+[ext_resource type="Script" path="res://scenes/PlayerAdv/RunState.gd" id="12_0m18v"]
+[ext_resource type="Script" path="res://scenes/PlayerAdv/StateDebugLabel.gd" id="12_x36jw"]
+[ext_resource type="Script" path="res://scenes/PlayerAdv/DashState.gd" id="13_yjnan"]
+[ext_resource type="Script" path="res://scenes/PlayerAdv/FallState.gd" id="14_2b6fi"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ynu4v"]
-size = Vector2(22, 51)
+size = Vector2(22, 59)
 
 [sub_resource type="Animation" id="Animation_wkyps"]
 length = 0.001
@@ -329,18 +331,16 @@ states/jump/position = Vector2(354, -12)
 transitions = ["Start", "Move", SubResource("AnimationNodeStateMachineTransition_0yf4j"), "Move", "jump", SubResource("AnimationNodeStateMachineTransition_dmn84"), "jump", "fall", SubResource("AnimationNodeStateMachineTransition_gh0g1"), "fall", "Move", SubResource("AnimationNodeStateMachineTransition_08uqv")]
 graph_offset = Vector2(0, -84.0414)
 
-[node name="PlayerAdv" type="CharacterBody2D"]
+[node name="PlayerAdv" type="CharacterBody2D" groups=["Player"]]
 platform_on_leave = 1
-safe_margin = 0.001
-script = ExtResource("1_yj5fb")
+script = ExtResource("1_gyt25")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(0.75, 0.75)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 5.5)
+position = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_ynu4v")
-debug_color = Color(9.62615e-08, 0.648175, 0.189265, 0.42)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(-32, -32)
@@ -360,29 +360,57 @@ tree_root = SubResource("AnimationNodeStateMachine_81l8o")
 anim_player = NodePath("../AnimationPlayer")
 parameters/Move/blend_position = -1.0
 
-[node name="STATES" type="Node" parent="."]
-script = ExtResource("8_gaaon")
+[node name="CharacterStateMachine" type="Node" parent="." node_paths=PackedStringArray("character", "animation_tree", "current_state", "next_state")]
+script = ExtResource("7_h3d4f")
+character = NodePath("..")
+animation_tree = NodePath("../AnimationTree")
+current_state = NodePath("Ground")
+next_state = NodePath("Ground")
 
-[node name="Idle" parent="STATES" instance=ExtResource("9_oeyuo")]
+[node name="Ground" type="Node" parent="CharacterStateMachine" node_paths=PackedStringArray("jump_state", "fall_state", "run_state", "dash_state")]
+script = ExtResource("8_b52sq")
+jump_state = NodePath("../Jump")
+fall_state = NodePath("../Fall")
+run_state = NodePath("../Run")
+dash_state = NodePath("../Dash")
 
-[node name="Dash" parent="STATES" instance=ExtResource("10_lehei")]
+[node name="Jump" type="Node" parent="CharacterStateMachine" node_paths=PackedStringArray("fall_state")]
+script = ExtResource("9_cngtu")
+fall_state = NodePath("../Fall")
+jump_height = 150.0
+jump_time_to_peak = 0.5
+jump_time_to_descent = 0.4
+landing_animation = "fall"
 
-[node name="Fall" type="Node" parent="STATES"]
-script = ExtResource("12_mfryf")
+[node name="Landing" type="Node" parent="CharacterStateMachine" node_paths=PackedStringArray("ground_state")]
+script = ExtResource("10_qjwij")
+ground_state = NodePath("../Ground")
 
-[node name="Jump" type="Node" parent="STATES"]
-script = ExtResource("11_jtdqq")
+[node name="Run" type="Node" parent="CharacterStateMachine"]
+script = ExtResource("12_0m18v")
 
-[node name="Move" type="Node" parent="STATES"]
-script = ExtResource("10_70asg")
+[node name="Dash" type="Node" parent="CharacterStateMachine"]
+script = ExtResource("13_yjnan")
+
+[node name="Fall" type="Node" parent="CharacterStateMachine" node_paths=PackedStringArray("ground_state")]
+script = ExtResource("14_2b6fi")
+landing_animation_name = null
+ground_state = NodePath("../Ground")
+can_move = null
 
 [node name="CoyoteTimer" type="Timer" parent="."]
 
+[node name="DashTimer" type="Timer" parent="."]
+
 [node name="DashCounter" type="Timer" parent="."]
 
-[node name="StateDebugLabel" type="Label" parent="."]
+[node name="StateDebugLabel" type="Label" parent="." node_paths=PackedStringArray("state_machine")]
 offset_left = -40.0
 offset_top = -49.0
 offset_right = 66.0
 offset_bottom = -26.0
 text = "State:"
+script = ExtResource("12_x36jw")
+state_machine = NodePath("../CharacterStateMachine")
+
+[connection signal="animation_finished" from="AnimationTree" to="CharacterStateMachine/Landing" method="_on_animation_tree_animation_finished"]

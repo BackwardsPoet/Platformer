@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dymqodv8p862n"]
+
+[ext_resource type="Script" path="res://scenes/PlayerAdv/Dash.gd" id="1_4monv"]
+
+[node name="Dash" type="Node"]
+script = ExtResource("1_4monv")
+
+[node name="DashDuration" type="Timer" parent="."]
+
+[connection signal="timeout" from="DashDuration" to="." method="_on_timer_timeout"]

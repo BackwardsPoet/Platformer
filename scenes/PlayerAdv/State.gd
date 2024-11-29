@@ -1,21 +1,22 @@
 extends Node
 
-class_name State
+var STATES = null
+var Player = null
 
-@export var can_move : bool = true
-
-var character : CharacterBody2D
-var playback : AnimationNodeStateMachinePlayback
-var next_state : State
-
-func state_process(delta):
+func enter_state():
 	pass
-
-func state_input(event : InputEvent): 
+func exit_state():
 	pass
-
-func on_enter():
-	pass
-	
-func on_exit():
-	pass
+func update(_delta):
+	return null
+func player_movement():
+	if Player.movement_input.x >0:
+		Player.velocity.x = Player.SPEED
+		Player.last_direction = Vector2.RIGHT
+	elif Player.movement_input.x <0:
+		Player.velocity.x = - Player.SPEED
+		Player.last_direction = Vector2.LEFT
+	else:
+		Player.velocity.x = 0
+		
+		

@@ -1,4 +1,6 @@
-extends Node
+extends State
+
+class_name RunState
 
 
 # Called when the node enters the scene tree for the first time.
